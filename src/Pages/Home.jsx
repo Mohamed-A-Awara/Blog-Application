@@ -21,7 +21,7 @@ function Home() {
 
 
     const openDemo = ()=>{
-        window.open('')
+        window.open('https://github.com/Mohamed-A-Awara/Blog-Application' , (500,500))
     }
 
     return (
@@ -37,8 +37,10 @@ function Home() {
                             >
                                 Get Started
                             </button>
-                            <button className='btnView'>
-                                View Demo
+                            <button className='btnView'
+                                onClick={openDemo}
+                            >
+                                View Repo
                             </button>
                         </div>
                     </div>
