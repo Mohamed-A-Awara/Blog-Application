@@ -1,0 +1,123 @@
+.homeParent{
+    overflow: hidden;
+    width: 100%;
+    height: 90vh !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homeContent{
+    width: 50%;
+    height: 100%;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ContentParent{
+    width: 80%;
+    height: 60%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+.ContentParent h2{
+    font-size: 3.3rem;
+    color: var(--headerColor);
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+.ContentParent p {
+    font-size: 1.7rem;
+    color: var(--whiteColor);
+    opacity: 0.7;
+}
+
+/* .homeBtns{    
+    width: 60%;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: beige;
+}  */
+
+.btnGet , .btnView {
+    width: 220px;
+    height: 70px;
+    padding: 10px;
+    border-radius: 40px;
+    font-size: 22px;
+    background-color: transparent;
+    border: 1px solid var(--headerColor);
+    color: #ffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.5s all ease;
+    margin: 10px 0;
+    margin-right: 10px ;
+}
+.btnGet {
+    background-color: var(--headerColor);
+}
+.btnGet:hover{
+    background-color: transparent ;
+}
+.btnView:hover {
+    background-color: var(--fontColor);
+    color: black;
+}
+
+.homeImage{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.homeImage img{
+    width: 80%;
+    object-fit: cover !important;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .homeParent{
+        height: auto !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+    }
+    .homeContent , .homeImage{
+        width: 100%;
+    }
+    .homeImage{
+        order: 1;
+        margin-bottom: 20px;
+    }
+    .homeContent{
+        order: 2;
+    }
+    .homeContent .ContentParent{
+            width: 100%;
+            height: 70%;
+        
+    }
+    .ContentParent{
+        text-align: center;
+    }
+    .ContentParent p {
+        font-size: 1.5rem;
+    }
+    .btnGet{
+        margin: 15px 0 ;
+    }
+}

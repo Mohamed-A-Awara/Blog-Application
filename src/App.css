@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root {
+    /* --fontColor : #3468C0; */
+    --whiteColor : #fdfdfd;
+    /* --bgColor : #f0ebeb; */
+    /* --textColor : #333; */
+    --shadowColor : rgba(0,0,0,0.2);
+    --linkcolor : #F0F3FF;
+    --hoverBackground :#82bbf5 ; 
+
+    --headerColor : #F400FF;
+    --mainColor :#3D065F ;
+    --fontColor : #2AF6FF;
+    --textColor  : #5F27BD;
+    --bgColor : #7C1DC9;
+}
+html {
+    overflow-x:  hidden;
+}
+body {
+    /* background: linear-gradient(90deg, rgba(35, 48, 47, 1) 12%, rgba(60, 89, 193, 1) 66%, rgba(26, 51, 111, 1) 93%); */
+    /* background: linear-gradient(90deg, rgba(27, 39, 38, 0.96) 12%, rgba(60, 89, 193, 0.88) 66%, rgba(26, 51, 111, 0.97) 93%); */
+    background: linear-gradient(90deg, rgba(61, 6, 95, 1) 0%, rgba(124, 29, 201, 1) 57%);
+    /* height: 150vh; */
+}
+.AllParent {
+    padding-top: 90px;
+}
+.section-header h1{
+    text-transform: uppercase ;
+    text-align: center;
+    font-size: 7rem ;
+    font-weight: 700;
+    letter-spacing: 20px;
+    opacity: 0.5;
+    color: var(--whiteColor);
+}   
+.HandleContainer{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+/* Responsive CSS Style   */
+@media screen and (max-width: 768px) {
+    /* Handle Header */
+    .section-header h1{
+        font-size: 2.7rem  !important;
+        text-align: center;
+        padding: 0 20px !important;
+    }
+    .HandleContainer{
+        width: 90% !important;
+    }
+}

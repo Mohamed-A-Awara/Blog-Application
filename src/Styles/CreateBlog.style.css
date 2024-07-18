@@ -1,0 +1,71 @@
+.blogParent{
+    width: 100%;
+    height: calc(100vh - 120px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.blog{
+    margin-top: 50px;
+    width: 50%;
+    height: 50vh;
+}
+.blogCol{
+    margin: 0 auto;
+}
+.blogCol label  {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin: 10px;
+}
+.blogCol input[type ='file']{
+    width: auto;
+}
+
+.btnCreate{
+    margin: 15px 0;
+    width: 80%;
+    padding: 10px !important;
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.btnUpload{
+    margin: 5px 0;
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.ColImg{
+    display: block;
+    margin: 15px auto !important;
+    width: 90% !important;
+    height: 30vh;
+    overflow: hidden;
+
+}
+.UploadImgBox{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+
+}
+.UploadImgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+@media screen and (max-width: 768px) {
+    .blog{
+        width: 95%;
+        height: 70vh;
+    }
+    .blogCol input{
+        width: 90%;
+        margin: 0 10px;
+    }
+    .btnUpload{
+        margin: 0 10px;
+    }
+}
